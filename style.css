@@ -4,11 +4,11 @@
     padding: 0px;
 }
 
-body{
+body {
     background-color: rgba(185, 185, 185, 1);
 }
 
-span{
+span {
     color: red;
 }
 
@@ -16,7 +16,7 @@ span{
     width: 100%;
     height: 766px;
     background-image: url("assets/header-img.png");
-    background-size:cover;
+    background-size: cover;
     padding-top: 38px;
     /* padding-left: 156px; */
     position: relative;
@@ -25,7 +25,7 @@ span{
 .logo {
     position: absolute;
     top: 0px;
-    left:0px;
+    left: 0px;
     height: 253.4px;
     width: 196.24px;
     /* top: 0;
@@ -83,20 +83,20 @@ img {
     /* height: 100%; */
 }
 
-#section1{
+#section1 {
     display: flex;
     padding: 10% 10%;
     gap: 10%;
 }
 
-.section1-left img{
+.section1-left img {
     width: 550px;
     height: 391px;
 }
 
-.section1-right h1{
+.section1-right h1 {
     width: 358px;
-    height:  80px;
+    height: 80px;
     margin-left: 10px;
     font-family: "Saira Condensed", sans-serif;
     font-weight: 600;
@@ -105,29 +105,29 @@ img {
     line-height: 90%;
 }
 
-.s1-h1{
+.s1-h1 {
     border-left: 8px solid red;
-    height:  80px;
+    height: 80px;
     margin-bottom: 120px;
 }
 
-.s1-p{
+.s1-p {
     width: 449px;
     height: 204px;
 }
 
-.section1-right p{
+.section1-right p {
     margin-top: 30px;
 }
 
-#register-now{
+#register-now {
     width: 100%;
     height: 422px;
     background-color: black;
     padding: 6% 0;
 }
 
-#register-now h1{
+#register-now h1 {
     color: white;
     text-align: center;
     font-size: 80px;
@@ -137,18 +137,18 @@ img {
     line-height: 90%;
 }
 
-#register-now p{
+#register-now p {
     font-family: "Saira Condensed", sans-serif;
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
     margin-top: 2%;
-    text-decoration: underline 2px ;
+    text-decoration: underline 2px;
     text-underline-offset: 10px;
     font-size: 200%;
     font-weight: 600;
 }
 
-#coaches{
+#coaches {
     width: 100%;
     height: 1603px;
     display: flex;
@@ -157,21 +157,21 @@ img {
     font-family: "Saira Condensed", sans-serif;
 }
 
-.coaches-img img{
+.coaches-img img {
     width: 400px;
     height: 1394px;
 }
 
-.coaches-details{
+.coaches-details {
     margin-right: 20%;
 }
 
-.coaches-details-data{
+.coaches-details-data {
     margin-top: 18%;
-    margin-bottom: 55% ;   
+    margin-bottom: 55%;
 }
 
-.coaches-details-data-heading{
+.coaches-details-data-heading {
     border-left: 8px solid red;
     padding-left: 12px;
     margin-bottom: 2rem;
@@ -179,74 +179,113 @@ img {
 }
 
 /* playerofWeek */
-#playerofWeek{
-    width: 100%;
+.playerofWeek {
     height: 913px;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
+    /* background-color: black; */
 }
 
-.bg-red{
-    width: 200%;
-    height: 913px;
+.red-cut-bg {
+    height: 100%;
+    width: 100%;
     background-color: red;
-    transform: skewX(73.3deg);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 55%, 0% 0%);
+    color: white;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.playerofWeek {
+    font-family: "Saira Condensed", sans-serif;
     position: relative;
 }
 
-.playerofWeek-info{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-    /* padding-left: 20%; */
-}
-
-.playerofWeek-info-text{
-    font-family: "Saira Condensed", sans-serif;
+.playerofWeek-info {
+    width: 50%;
     text-align: center;
-    width: 50%;
-    padding-left: 16%;
-    padding-top: 10%;
+    padding-top: 13%;
     line-height: 70px;
+    /* position: relative; */
 }
 
-.playerofWeek-info-text h2{
+.playerofWeek-info h2 {
     font-size: 50px;
+    margin-left: 260px;
+    color:rgba(255, 255, 255, 0.5);
 }
 
-.playerofWeek-info-text h1{
-    font-size: 100px;
-    
+.playerofWeek-info h1 {
+    font-size:90px;
+    margin-left: 260px;
 }
 
-.playerofWeek-info-text div{
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.playerofWeek-info-imag{
-    width: 50%;
-}
-
-.playerofWeek-info-imag img{
-    width: 1055px;
+.playerofWeek-info-bottom {
+    color: rgba(101, 101, 101, 1);
     position: absolute;
-    right: -28px;
+    bottom: 60px;
+    left: 200px;
+    font-size: 200%;
+    display: flex;
+    gap:18px;
+}
+
+.playerofWeek-imag {
+    width: 50%;
+    padding-left: 50px;
+
+}
+
+.playerofWeek-imag img {
+    /* width:740px; */
+}
+
+/* ##Gallery */
+#gallery{
+    width: 100%;
+    height: 913px;
+    font-family: "Saira Condensed", sans-serif;
+}
+
+.gallery-images{
+    position: relative;
+}
+
+.train-1{
+    position: absolute;
+    width: 530px;
+    height: 400px;
+    z-index: 8;
+    top:70px;
+    left: 455px;
+}
+
+.train-2{
+    position: absolute;
+    width: 530px;
+    height: 400px;
+    right:205px
+}
+
+.train-3{
+    position: absolute;
+    width: 530px;
+    height: 400px;
+    left:205px;
+}
+
+.gallery-info{
+    display: flex;
+    justify-content: space-between;
+    gap:130px;
+    padding: 0 205px;
+    padding-top: 50px;
 }
 
 /* register-form */
-#register-form{
+#register-form {
     height: 800px;
     width: 100%;
-    background-color: yellowgreen;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,39 +294,40 @@ img {
     overflow: hidden;
 }
 
-.register-form{
+.register-form {
     font-size: 200%;
     padding-left: 15%;
     padding-bottom: 5%;
 }
 
-.register-form h1{
+.register-form h1 {
     margin-bottom: 3rem;
     text-transform: uppercase;
     color: rgba(101, 101, 101, 1);
 }
 
-.register-form input{
-   width: 100%;
-   height: 50px;
-   border-radius: 50px;
-   border: none; 
-   padding-left: 18px;
-   background-color: rgba(217, 217, 217, 1);
+.register-form input {
+    width: 100%;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 18px;
+    background-color: rgba(217, 217, 217, 1);
+    box-shadow: 0px 2px 4px 0px gray; 
 }
 
-.register-form input:not(:last-child){
+.register-form input:not(:last-child) {
     margin-bottom: 30px;
 }
 
-.register-form form{
+.register-form form {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-.football-imag{
-    /* padding-top: 10%; */
+.football-imag {
+    padding-top: 10%;
     padding-right: 30%;
     position: relative;
 }
@@ -299,25 +339,21 @@ img {
     z-index: 9;
 }
 
-.triangle{
+.triangle {
     position: absolute;
-    background-color: rgba(128, 128, 128, 0.311);
-    width: 731px;
-    height: 431px;
-    top:0px;
-    left: 450px;
-    right: 0px;
-    /* bottom: 0;
-    right: 0; */
+    background: linear-gradient(90deg,rgba(125, 150, 127, 1),rgba(255, 255, 255, 0));
+   width: 760px;
+	height:800px;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%, 0% 50%);
+    top: -155px;
+    left: 0px;
     z-index: 8;
-    transform: rotate(45deg);
-    
 }
 
 
 /* footer */
 
-#footer{
+#footer {
     width: 100%;
     height: 498px;
     background-color: black;
@@ -325,10 +361,10 @@ img {
     /* justify-content: space-between; */
     /* gap: 20%; */
     padding: 0 8%;
-    font-family:"Saira Condensed", sans-serif ;
+    font-family: "Saira Condensed", sans-serif;
 }
 
-.footer-text{
+.footer-text {
     text-align: center;
     padding: 15% 0;
     /* border: 1px solid; */
@@ -338,36 +374,36 @@ img {
     color: white;
 }
 
-.footer-navlink{
- /* border: 1px solid; */
- flex: 1;
- text-align: center;
- list-style-type: none;
- padding: 12% 0;
- font-size: 150%;
- font-weight: 600;
+.footer-navlink {
+    /* border: 1px solid; */
+    flex: 1;
+    text-align: center;
+    list-style-type: none;
+    padding: 12% 0;
+    font-size: 150%;
+    font-weight: 600;
 }
 
-.footer-navlink li{
+.footer-navlink li {
     list-style-type: none;
     color: rgba(255, 255, 255, 0.6);
-    
+
 }
 
-.footer-navlink li:not(:last-child){
+.footer-navlink li:not(:last-child) {
     margin-bottom: 14px;
 }
 
-.footer-navlink p{
+.footer-navlink p {
     margin-top: 100px;
     font-weight: lighter;
 }
 
-.footer-socialmedia-links{
- /* border: 1px solid; */
- flex: 2;
- text-align: center;
- font-size: 350%;
- padding: 17% 0;
- color: white;
+.footer-socialmedia-links {
+    /* border: 1px solid; */
+    flex: 2;
+    text-align: center;
+    font-size: 350%;
+    padding: 17% 0;
+    color: white;
 }
